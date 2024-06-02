@@ -1,0 +1,147 @@
+
+:root{
+    --green: hsl(75,94%,57%);
+    --white: hsl(0,0%,100%);
+    --grey: hsl(0,0%,20%);
+    --DK_grey: hsl(0,0%,12%);
+    --off_black: hsl(0,0%,8%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+body{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    background-color: var(--white);
+}
+
+/* styling the black bg */
+.black__bg{
+    background-color: var(--off_black);
+    width: 1000px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* // styling the social container //*/
+.social__container{
+    background-color: var(--DK_grey);
+    width: 350px;
+    /* height: 450px; */
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* // profile wrap styling // */
+.profile__wrap{
+    width: 100%;
+    height:auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* // img styling // */
+img{
+    width: 90px;
+    border-radius: 50%;
+}
+
+/* // profile content // */
+.profile__content{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__content h2{
+    font-size: 25px;
+    color: var(--white);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* // styling the h5 // */
+.profile__content h5{
+    font-size: 14px;
+    color: var(--green);
+}
+
+/* // styling profile socials // */
+.profile__socials{
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px;
+}
+
+/* // styling the q tag // */
+.profile__socials q{
+   color: var(--white); 
+   margin: auto;
+   margin-bottom: 25px;
+   width: 100%;
+   display: block;
+   text-align: center;
+}
+a{
+    text-decoration: none;
+}
+/* // styling the button // */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    margin: 15px 0;
+    background-color: var(--grey);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.active{
+    background-color: var(--green);
+    color: var(--off_black);
+}
+
+.btn:hover{
+    background-color: var(--green);
+    color: var(--off_black);
+    transform: scale(1.078);
+}
+
+
+/* ################## */
+/* // media query // */
+/* ################### */
+@media (max-width: 480px) {
+    .black__bg{
+        width: 450px;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+    .social__container{
+        width: 100%;
+    }
+}
