@@ -10,6 +10,9 @@
     <link rel="icon" type="image/x-icon" href="logo.jpeg">
     <!-- google font links -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Young+Serif&display=swap" rel="stylesheet">
+    <!-- scroll reveal links -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
 
@@ -38,6 +41,20 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        ScrollReveal({
+            // reset: true, 
+            // so it will only animate once when the page reloads
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.profile__wrap',{delay: 500, origin: 'top'})
+        ScrollReveal().reveal('.profile__socials a',{delay: 700, origin: 'top', interval: 200})
+    </script>
 
 </body>
 </html>
